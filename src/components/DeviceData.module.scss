@@ -36,7 +36,13 @@
   margin-right: 2rem;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1110px) and (min-width: 691px) {
+  .deviceDataContainer {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 691px) {
   .seeAll {
     @include BottomLink(left);
     margin-left: 2rem;
