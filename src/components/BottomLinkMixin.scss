@@ -1,0 +1,8 @@
+@mixin BottomLink($align) {
+  font-size: 0.875rem;
+  color: #2b73de;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: $align;
+}

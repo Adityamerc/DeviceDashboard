@@ -1,0 +1,66 @@
+@import "./BottomLinkMixin.scss";
+
+@mixin timeSub($color) {
+  display: block;
+  margin-top: 0.068125rem;
+  font-size: 1.5rem;
+  color: $color;
+}
+
+@mixin timeHead {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.Container {
+  border-right: 1px solid #edebe9;
+  padding: 0 4.1875rem;
+}
+
+.usageTimeContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.0625rem;
+}
+
+.usedTime {
+  @include timeHead;
+  & > span {
+    @include timeSub(#0c8722);
+  }
+}
+
+.maxTime {
+  @include timeHead;
+  & > span {
+    @include timeSub(#201f1e);
+  }
+}
+
+.extendContainer {
+  margin-top: 2.5rem;
+  text-align: right;
+}
+
+.changeRestrictions {
+  @include BottomLink(right);
+  margin-top: 2.8rem;
+}
+
+@media (max-width: 1110px) {
+  .Container {
+    border-right: 0;
+    border-bottom: 1px solid #edebe9;
+    padding: 0 2rem;
+  }
+
+  .extendContainer {
+    text-align: center;
+  }
+
+  .changeRestrictions {
+    @include BottomLink(left);
+    margin-bottom: 1.5rem;
+  }
+}

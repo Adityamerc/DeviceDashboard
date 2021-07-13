@@ -1,0 +1,63 @@
+.mainContainer {
+  margin: 0 3.625rem;
+}
+
+.mainHeader {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 2.1875rem;
+  color: #000000;
+}
+
+.activitiesDropDown {
+  background-color: #ffffff;
+  height: 4.375rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.dashboardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: 0.875rem;
+  padding: 0 1.25rem 1rem 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.selectFilter {
+  border: 1.5px solid #054db9;
+  border-radius: 1.375rem;
+  height: 1.9375rem;
+  padding: 0.25rem 0.75rem;
+  margin-left: 1.96875rem;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+}
+
+.selectFilterFill {
+  background-color: #054db9;
+  color: #fff;
+}
+
+.notAll {
+  background-color: #054db9 !important;
+  color: #fff !important;
+}
+
+.notAllIcon {
+  color: #fff !important;
+}
+
+@media (max-width: 790px) {
+  .activitiesDropDown {
+    margin: 0 -0.5rem;
+  }
+
+  .mainContainer {
+    margin: 0 0.5rem;
+  }
+}

@@ -1,0 +1,44 @@
+@import "./BottomLinkMixin.scss";
+
+.CenterWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.devices {
+  display: flex;
+  flex-direction: column;
+  gap: 2.375rem;
+  align-items: flex-start;
+}
+
+.usersPhone,
+.usersLap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deviceInfo {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #000000;
+  margin-left: 2.1875rem;
+  & > span {
+    display: block;
+    color: #3d7fe0;
+  }
+}
+
+.seeAll {
+  @include BottomLink(right);
+  margin-right: 2rem;
+}
+
+@media (max-width: 1110px) {
+  .seeAll {
+    @include BottomLink(left);
+    margin-left: 2rem;
+  }
+}

@@ -1,0 +1,15 @@
+.Container {
+  border-right: 1px solid #edebe9;
+}
+
+.pieContainer {
+  height: 15.625rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 790px) {
+  .Container {
+    border-right: 0;
+    border-bottom: 1px solid #edebe9;
+  }
+}

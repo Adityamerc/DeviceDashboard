@@ -1,0 +1,50 @@
+.navMain {
+  height: 5.5625rem;
+  background: linear-gradient(
+    90.96deg,
+    rgba(48, 118, 222, 0.4) 1.05%,
+    rgba(241, 108, 11, 0.13) 99.89%
+  );
+  display: flex;
+  justify-content: space-between;
+}
+
+.userName {
+  font-size: 1.5625rem;
+  font-weight: bold;
+
+  color: #022742;
+}
+
+.deviceInfo,
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+.userInfo {
+  margin-left: 3.625rem;
+}
+
+.deviceInfo {
+  margin-right: 3.625rem;
+}
+
+@media (max-width: 790px) {
+  .userInfo {
+    margin-left: 1.625rem;
+  }
+
+  .deviceInfo {
+    margin-right: 1.625rem;
+  }
+
+  .navMain {
+    height: 3.5625rem;
+  }
+
+  .userName {
+    font-size: 1.2rem;
+  }
+}
